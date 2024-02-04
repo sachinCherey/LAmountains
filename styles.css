@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.banner{
+    position: absolute;
+    top: 0%;
+    
+}
+
+.right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 35%;
+  width: 75%;
+  background: #0c111a47;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-around;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+}
+
+#history:hover{
+   content: url('./images/01historyC.png');
+   cursor: pointer;
+}
+#team:hover{
+    content: url('./images/02teamC.png');
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.gContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #807aa96e;
+    width: 100%;
+    height: 20%;
+    z-index: 1;
+    position: absolute;
+    top: 80%;
+} 
+
+.scrollable-container {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .scrollable-content {
+    display: inline-flex;
+    animation: scrollAnimation 20s linear infinite;
+  }
+
+  .scrollable-item {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .scrollable-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .dot-container {
+    justify-content: center;
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 84%;
+  }
+
+  .dot {
+    width: 2%;
+    height: 25%;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: changeColor 25s infinite;
+  }
+
+
+  .dot1{
+    width: 2%;
+    height: 25%;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: changeColor 15s infinite;
+  }
+
+  .dot2{
+    width: 2%;
+    height: 25%;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: changeColor 5s infinite;
+  }
+
+  @keyframes changeColor {
+    0%, 100% {
+      background-color: white;
+    }
+    33% {
+      background-color: gray; 
+    }
+    66% {
+      background-color: white;
+    }
+  }
+
+  .item1{
+
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    width: 10%;
+
+  }
+
+  .item2{
+    position: absolute;
+    top: 48%;
+    left: 28.5%;
+    width: 10%;
+  }
+
+  .item3{
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    width: 60%;
+  }
+
+  .item4{
+    top: 101%;
+    width: 12%;
+    left: 20%;
+    position: absolute;
+  }
+
+  .item5{
+    position: absolute;
+    width: 6%;
+    top: 104.5%;
+    left: 30.5%;
+  }
+
+  .item6{
+    width: 42%;
+    position: absolute;
+    left: 38%;
+    top: 103%;
+  }
+
+  .item7{
+    background: #414f6b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 50px;
+    position: absolute;
+    top: 109%;
+    z-index: 1;
+    /* padding-left: 16%; */
+  }
+
+
+  .tabs{
+    padding-right: 25%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: 82%;
+    justify-content: center;
+    /* position: relative; */
+    left: -25%;
+
+
+  }
+
+  #tab1,#tab2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tab1:hover,#tab2:hover{
+    background-color: rgba(255, 255, 255, 0.375);
+    cursor: pointer;
+    color: #807aa9;
+    text-decoration: underline;
+  }
+
+  .item8{
+    position: absolute;
+    top: 111%;
+  }
+
+  .content{
+    position: absolute;
+    top: 118%;
+    left: 20%;
+    width: 25%;
+  }
+
+  #a{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+  }
+
+  #b{
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    width: 70%;
+  }
+
+  .item9{
+    display: flex;
+    width: 100%;
+    height: 6%;
+    justify-content: space-around;
+    background: #414f6b;
+    position: absolute;
+    top: 149%;
+    align-items: center;
+  }
+
+  .c{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #c1{
+    width: 20%;
+  }
+
+  #c2{
+    width: 40%;
+  }
+
+  .d{
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+    font-size: 60%;
+  }
